@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
-       
-    	<meta name="author" content="{{ site.author }}" />
-        <meta name="description" content="{{ site.title }} {{ site.description }}">
 
-        <title>{% if site.title %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
 
-        <!-- css -->
-        <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
-        <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.title }} {{ site.description }}">
 
-        <!-- Sharing is caring - I care. -->
-    	<meta property="og:title" content="{{ site.title }}">
-    	<meta property="og:description" content="{{ site.title }} {{ site.description }}">
-    	<meta property="og:image" content="{{ site.url }}/assets/images/share_card.png">
-    	<meta property="og:url" content="{{ site.url }}">
-    	<meta property="og:site_name" content="{{ site.title }}">
+    <title>{% if site.title %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
 
-    	<!-- Google Analytics -->
-        {% include analytics.html %}
-    </head>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+
+    <!-- Sharing is caring - I care. -->
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.title }} {{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/share_card.png">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+
+    <!-- Google Analytics -->
+    {% include analytics.html %}
+</head>

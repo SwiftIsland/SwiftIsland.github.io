@@ -22,7 +22,9 @@ body {
 
 a {
   color: #000;
+  text-decoration: underline;
 }
+
 a:focus {
   outline: none;
 }
@@ -271,6 +273,7 @@ ul li {
   font-size: 12px;
   font-weight: 400;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
 }
 .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
   background-color: transparent;
@@ -309,7 +312,7 @@ ul li {
   letter-spacing: 3px;
   /*text-transform: uppercase;*/
 }
-.site-branding .logo:focus, .site-branding .logo:hover {
+.site-branding .logo:focus, .site-branding .logo:hover, a {
   text-decoration: none;
 }
 
@@ -375,6 +378,7 @@ ul li {
 /*
  * 6.0 Section
  */
+
 /*
  * 6.1 Section: About
  */
@@ -385,6 +389,19 @@ ul li {
   margin-bottom: 25px;
 }
 
+/*
+ * 6.1.1 Section: Convince your boss
+ */
+.convince {
+  background-color: #ffcc33;
+}
+
+.convince .section-title {
+  margin: 0 0 25px;
+}
+.convince figure {
+  margin-bottom: 25px;
+}
 /*
  * 6.2 Section: Facts
  */

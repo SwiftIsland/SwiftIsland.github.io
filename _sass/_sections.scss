@@ -21,6 +21,30 @@
  * 6.1.1 Section: Convince your boss
  */
 
+.travel {
+  background-color: #ffcc33;
+}
+
+.pricecompare {
+  background-color: #cc33FF;
+}
+
+.codeofconduct {
+  background-color: #ffcc33;
+}
+
+.travel .codeofconduct .pricecompare .section-title {
+  margin: 0 0 25px;
+}
+.travel .codeofconduct .pricecompare figure {
+  margin-bottom: 25px;
+}
+
+
+/*
+ * 6.1.1 Section: Convince your boss
+ */
+
 .convince {
     background-color: #ffcc33;
     .section-title {

@@ -79,15 +79,14 @@
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: url(../images/backgrounds/lighthouse_texel_crop.png) no-repeat center left / cover;
+    background: url(../images/backgrounds/header.jpg) no-repeat center center / cover;
     &::before {
         content: "";
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        left: 0; // background-color: rgba(0, 0, 0, 0.1);
     }
     .intro {
         color: #fff;
@@ -98,7 +97,7 @@
         padding: 0 15px;
         margin-top: 90px;
         svg {
-            margin-bottom: 46px;
+            margin-bottom: 28px;
         }
         h1 {
             margin: 0px;
@@ -122,7 +121,7 @@
             font-weight: 300;
         }
         .card {
-            margin-top: 50px;
+            margin-top: 36px;
             svg {
                 margin-bottom: 6px;
                 color: #FF0155;
@@ -134,6 +133,7 @@
         }
         .buy-tickets {
             margin-top: 55px;
+            margin-bottom: 20px;
             tito-button,
             button {
                 font-weight: 700;

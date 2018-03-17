@@ -1,40 +1,32 @@
+h2.section-title {
+    margin: 0 0 25px;
+}
+h3.section-title {
+    margin: 0 0 10px;
+}
+
 /*
  * 6.0 Sections
  */
 
 .about {
-    .section-title {
-        margin: 0 0 25px;
-    }
     figure {
         margin-bottom: 25px;
     }
 }
 
-.about {
-    // background-color: #FFE856;
-}
-
-.travel {
-  background-color: #FFD23A;
-}
-
 .codeofconduct {
-  background-color: #ffcc33;
 }
 
 .travel .codeofconduct .section-title {
-  margin: 0 0 25px;
+    margin: 0 0 5px;
 }
 .travel .codeofconduct figure {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .convince {
     background-color: #ffcc33;
-    .section-title {
-        margin: 0 0 25px;
-    }
     figure {
         margin-bottom: 25px;
     }
@@ -42,80 +34,69 @@
 
 
 /*
- * 6.2 Section: Facts
- */
+* 6.2 Section: Facts
+*/
 
 .facts {
+    background-color: #FFE54B;
     i {
-        color: #fff;
+        color: black;
         font-size: 3em;
     }
     h3 {
-        color: #fff;
+        color: black;
         text-align: center;
         font-weight: 400;
     }
 }
 
+.location {
+    background-color: #FFAA22;
+    color: white;
+    font-size: 20px;
+    .section-title, a {
+        color: white;
+    }
+    a:hover {
+        color: #DEDEDE;
+    }
+}
 
 /*
  * 6.3 Section: Speaker
  */
 
 .mentors {
-    .section-title {
-        margin: 0 0 25px;
-    }
     figure {
         margin-bottom: 25px;
     }
 }
 
-.mentors {
-    background-color: #FFB325;
-}
-
 .speaker {
     text-align: center;
     color: #313131;
-    /*margin: 10px 0;
-    h4 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    p {
-        margin-bottom: 5px;
-    }*/
     img:hover {
         opacity: .7;
     }
 }
 
-.tickets {
-    background-color: #FF9325;
-
-    .section-title {
-        margin: 0 0 25px;
-        color: #FFFFFF;
+.fullwidth-image {
+    .row {
+        height: 158px;
     }
 }
 
 .photos {
-    background-color: #E10360; 
+    background-color: #FFCC33;
 
-    .section-title {
-        margin: 0 0 25px;
-        color: #FFFFFF;
-    }  
 }
 
 .faq {
-    background-color: #E10360; 
+    background-color: #E10360;
 
     .section-title {
-        margin: 0 0 25px;
         color: #FFFFFF;
-    }  
+    }
 }
 
 
@@ -194,7 +175,7 @@
  */
 
 .faq {
-    background-color: #FF0460;
+    background-color: #FF0055;
 
     .panel-heading {
         cursor: pointer;

@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 p {
@@ -45,7 +45,9 @@ p {
 
 ul {
     li {
-        font-weight: 700;
+        b {
+            font-weight: 400;
+        }
         margin-bottom: 10px;
     }
 }
@@ -135,9 +137,9 @@ ul {
 
 .section-title {
     color: #313131;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     margin: 0 0 20px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
 }
 
@@ -236,21 +238,21 @@ ul {
     }
 }
 
-.bg-image-1 {
+.beach1 {
     @extend .bg-image;
-    background: url(../images/backgrounds/bg-1.jpg) no-repeat center center / cover;
-    &::before {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+    background: url(../images/backgrounds/beach1.jpg) no-repeat center center / cover;
 }
 
-.bg-image-2 {
+.beach2 {
     @extend .bg-image;
-    background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom / cover;
-    &::before {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+    background: url(../images/backgrounds/beach2.jpg) no-repeat center bottom / cover;
 }
+
+.aerial {
+    @extend .bg-image;
+    background: url(../images/backgrounds/aerial.jpg) no-repeat center bottom / cover;
+}
+
 
 @media (min-width:768px) {
     .section {
@@ -258,9 +260,9 @@ ul {
     }
     .section-title {
         color: #313131;
-        letter-spacing: 1px;
+        // letter-spacing: 1px;
         margin: 0 0 60px;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         text-align: left;
     }
 }

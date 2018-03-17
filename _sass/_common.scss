@@ -52,6 +52,23 @@ ul {
     }
 }
 
+.card {
+    h2 {
+        margin-top: 0px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+
+    svg {
+        margin-bottom: 6px;
+    }
+    display: inline-block;
+    width: 160px;
+    font-weight: normal;
+}
+
+
 .custom-list-icon {
     list-style-type: none;
     padding: 0;

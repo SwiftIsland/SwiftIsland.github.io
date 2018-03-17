@@ -1,35 +1,36 @@
-    <section id="faq" class="section faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="section-title">FAQ</h2>
-                </div>
+<section id="faq" class="section faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">FAQ</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        {% for faq in site.faqs %}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    {% for faq in site.faqs %}
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="heading-{{ faq.index }}">
-                                <h4 class="panel-title">
-                                        <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ faq.index }}" aria-expanded="true" aria-controls="collapse-{{ faq.index }}">{{ faq.title }}</a>
-                                    </h4>
-                            </div>
-
-                            <div id="collapse-{{ faq.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ faq.index }}">
-                                <div class="panel-body">
-                                    {{ faq.body }}
-                                </div>
-                            </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-{{ faq.index }}">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ faq.index }}"
+                                    aria-expanded="true" aria-controls="collapse-{{ faq.index }}">{{ faq.title }}</a>
+                            </h4>
                         </div>
 
-                        {% endfor %}
-
-
-
+                        <div id="collapse-{{ faq.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ faq.index }}">
+                            <div class="panel-body">
+                                {{ faq.body }}
+                            </div>
+                        </div>
                     </div>
+
+                    {% endfor %}
+
+
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>

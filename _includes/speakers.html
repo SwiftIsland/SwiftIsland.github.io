@@ -1,57 +1,69 @@
-    <section id="mentors" class="section mentors">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="section-title">Mentors</h2>
-                </div>
+<section id="mentors" class="section mentors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Mentors</h2>
             </div>
-
-            <div class="row">
-
-                {% for mentor in site.speakers limit: 4 offset: 0 %}
-
-                {% if mentor.status == 'live' %}
-                    <div class="col-md-3">
-                        <div class="speaker">
-                            <figure>
-                                <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
-                            </figure>
-                            <h4>{{ mentor.name }}</h4>
-                            <p>{{ mentor.title }}</p>
-                            <ul class="social-block">
-                                <li><a href="{{ mentor.twitter }}"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="{{ mentor.linkedin }}"><i class="ion-social-linkedin-outline"></i></a></li>
-                            </ul>
-
-                        </div><!-- /.speaker -->
-                    </div>
-                {% endif %}
-                {% endfor %}
-            </div>
-
-            <div class="row">
-
-                {% for mentor in site.speakers limit: 4 offset: 4 %}
-
-                {% if mentor.status == 'live' %}
-                    <div class="col-md-3">
-                        <div class="speaker">
-                            <figure>
-                                <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
-                            </figure>
-
-                            <h4>{{ mentor.name }}</h4>
-                            <p>{{ mentor.title }}</p>
-                            <ul class="social-block">
-                                <li><a href="{{ mentor.twitter }}"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                            </ul>
-
-                        </div><!-- /.speaker -->
-                    </div>
-                {% endif %}
-                {% endfor %}
-            </div>
-
         </div>
-    </section>
+
+        <div class="row">
+
+            {% for mentor in site.speakers limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3">
+                <div class="speaker">
+                    <figure>
+                        <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
+                    </figure>
+                    <h4>{{ mentor.name }}</h4>
+                    <p>{{ mentor.title }}</p>
+                    <ul class="social-block">
+                        <li>
+                            <a href="{{ mentor.twitter }}">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ mentor.linkedin }}">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.speaker -->
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+
+        <div class="row">
+
+            {% for mentor in site.speakers limit: 4 offset: 4 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3">
+                <div class="speaker">
+                    <figure>
+                        <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
+                    </figure>
+
+                    <h4>{{ mentor.name }}</h4>
+                    <p>{{ mentor.title }}</p>
+                    <ul class="social-block">
+                        <li>
+                            <a href="{{ mentor.twitter }}">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.speaker -->
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+
+    </div>
+</section>

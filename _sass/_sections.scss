@@ -1,9 +1,11 @@
 h2.section-title {
     margin: 0 0 25px;
 }
+
 h3.section-title {
     margin: 0 0 10px;
 }
+
 
 /*
  * 6.0 Sections
@@ -15,12 +17,12 @@ h3.section-title {
     }
 }
 
-.codeofconduct {
-}
+.codeofconduct {}
 
 .travel .codeofconduct .section-title {
     margin: 0 0 5px;
 }
+
 .travel .codeofconduct figure {
     margin-bottom: 25px;
 }
@@ -54,13 +56,15 @@ h3.section-title {
     background-color: #FFAA22;
     color: white;
     font-size: 20px;
-    .section-title, a {
+    .section-title,
+    a {
         color: white;
     }
     a:hover {
         color: #DEDEDE;
     }
 }
+
 
 /*
  * 6.3 Section: Speaker
@@ -88,12 +92,10 @@ h3.section-title {
 
 .photos {
     background-color: #FFCC33;
-
 }
 
 .faq {
     background-color: #E10360;
-
     .section-title {
         color: #FFFFFF;
     }
@@ -176,7 +178,6 @@ h3.section-title {
 
 .faq {
     background-color: #FF0055;
-
     .panel-heading {
         cursor: pointer;
     }

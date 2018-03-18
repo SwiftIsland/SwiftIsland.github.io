@@ -160,6 +160,15 @@
     }
 }
 
+.tito-submit {
+    background-color: #FF0155 !important;
+    border-color: #FF0155 !important;
+    &:hover {
+        background-color: #DD0155 !important;
+        border-color: #DD0155 !important;
+    }
+}
+
 .logo-swift {
     font-weight: 700;
 }

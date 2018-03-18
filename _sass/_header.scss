@@ -168,6 +168,13 @@
     font-weight: 300;
 }
 
+@media (min-width:768px) and (max-width:991px) {
+    #nav-faq,
+    #nav-photos {
+        display: none
+    }
+}
+
 @media (min-width:768px) {
     .navbar-custom {
         background-color: transparent;

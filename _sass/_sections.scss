@@ -40,6 +40,10 @@ h3.section-title {
 */
 
 .facts {
+    padding: 70px;
+    .card {
+        padding: 20px 0;
+    }
     background-color: #FFE54B;
     i {
         color: black;

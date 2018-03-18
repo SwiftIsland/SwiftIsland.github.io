@@ -59,10 +59,12 @@ h3.section-title {
     .section-title,
     a {
         color: white;
+    }
+    a {
         text-decoration: underline;
     }
     a:hover {
-        color: #DEDEDE;
+        text-decoration: none;
     }
 }
 

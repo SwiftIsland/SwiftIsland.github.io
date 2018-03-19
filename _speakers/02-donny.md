@@ -6,5 +6,5 @@ status: "live"
 website: "https://blog.donnywals.com"
 twitter: "DonnyWals"
 linkedin: "donny-wals-33660014"
-image: "assets/images/speakers/speaker-2.png"
+image: "assets/images/speakers/speaker-donny.png"
 ---

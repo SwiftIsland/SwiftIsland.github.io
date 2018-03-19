@@ -6,5 +6,5 @@ status: "live"
 website: "https://marmelroy.github.io/"
 twitter: "marmelroy"
 linkedin: "roy-marmelstein-2ba36527"
-image: "assets/images/speakers/speaker-4.png"
+image: "assets/images/speakers/speaker-roy.png"
 ---

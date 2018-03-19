@@ -6,5 +6,5 @@ status: "live"
 website: "https://www.meghaphone.com"
 twitter: "meghafon"
 linkedin: "meghaphone"
-image: "assets/images/speakers/speaker-1.png"
+image: "assets/images/speakers/speaker-meghan.png"
 ---

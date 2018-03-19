@@ -15,18 +15,32 @@
                         <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
                     </figure>
                     <h4>{{ mentor.name }}</h4>
-                    <p>{{ mentor.title }}</p>
+                    
+                    <p>{{ mentor.bio}}</p>
                     <ul class="social-block">
+                        {% if mentor.twitter != '' %}
                         <li>
-                            <a href="{{ mentor.twitter }}">
+                            <a href="https://www.twitter.com/{{ mentor.twitter }}" target="_blank">
                                 <i class="ion-social-twitter"></i>
                             </a>
                         </li>
+                        {% endif %}
+                        
+                        {% if mentor.linkedin != '' %}
                         <li>
-                            <a href="{{ mentor.linkedin }}">
+                            <a href="https://www.linkedin.com/in/{{ mentor.linkedin }}" target="_blank">
                                 <i class="ion-social-linkedin-outline"></i>
                             </a>
                         </li>
+                        {% endif %}
+
+                        {% if mentor.website != '' %}
+                        <li>
+                            <a href="{{ mentor.website }}" target="_blank">
+                                <i class="ion-ios-world-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %}
                     </ul>
 
                 </div>

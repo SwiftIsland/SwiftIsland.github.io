@@ -20,6 +20,12 @@ And add this line to your Jekyll site's `_config.yml`:
 ```yaml
 theme: swift-island
 ```
+or
+ 
+```yaml
+remote_theme: swift-island
+```
+if you are running on Github pages.
 
 And then execute:
 

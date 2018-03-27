@@ -1,0 +1,10 @@
+---
+name: "Daniel Steinberg"
+title: "Mentor"
+bio: "Daniel Steinberg has been writing code for Apple platforms since System 7. He’s been teaching and writing code in Swift since it was released. Each year he finds joy in what Apple releases at WWDC and can’t wait to explore some new avenue with you at Swift Island."
+status: "live"
+website: "http://dimsumthinking.com/"
+twitter: "dimsumthinking"
+linkedin: ""
+image: "assets/images/speakers/speaker-daniel.png"
+---

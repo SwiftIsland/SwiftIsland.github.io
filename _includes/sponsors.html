@@ -1,0 +1,23 @@
+<section id="sponsor" class="section sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Software Sponsors</h3>
+                <p>Our pubquiz is is sponsored by software we love. The creators of these great products were so generous to
+                    provide software licenses as prizes.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+            {% for sponsor in site.sponsors %}
+            <div class="col-md-2 col-sm-3 col-xs-6 sponsor-icon">
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase }}.png{% endif %}" />
+                </a>
+                <h4>{{sponsor.title}}</h4>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

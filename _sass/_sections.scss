@@ -1,219 +1,228 @@
 h2.section-title {
-    margin: 0 0 25px;
+  margin: 0 0 25px;
 }
 
 h3.section-title {
-    margin: 0 0 10px;
+  margin: 0 0 10px;
 }
-
 
 /*
  * 6.0 Sections
  */
 
 .about {
-    figure {
-        margin-bottom: 25px;
-    }
+  figure {
+    margin-bottom: 25px;
+  }
 }
 
-.codeofconduct {}
+.codeofconduct {
+}
 
 .travel .codeofconduct .section-title {
-    margin: 0 0 5px;
+  margin: 0 0 5px;
 }
 
 .travel .codeofconduct figure {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .convince {
-    background-color: #ffcc33;
-    figure {
-        margin-bottom: 25px;
-    }
+  background-color: #ffcc33;
+  figure {
+    margin-bottom: 25px;
+  }
 }
-
 
 /*
 * 6.2 Section: Facts
 */
 
 .facts {
-    padding: 70px;
-    .card {
-        padding: 20px 0;
-    }
-    background-color: #FFE54B;
-    i {
-        color: black;
-        font-size: 3em;
-    }
-    h3 {
-        color: black;
-        text-align: center;
-        font-weight: 400;
-    }
+  padding: 70px;
+  .card {
+    padding: 20px 0;
+  }
+  background-color: #ffe54b;
+  i {
+    color: black;
+    font-size: 3em;
+  }
+  h3 {
+    color: black;
+    text-align: center;
+    font-weight: 400;
+  }
 }
 
 .location {
-    background-color: #FFAA22;
+  background-color: #ffaa22;
+  color: white;
+  font-size: 20px;
+  .section-title,
+  a {
     color: white;
-    font-size: 20px;
-    .section-title,
-    a {
-        color: white;
-    }
-    a {
-        text-decoration: underline;
-    }
-    a:hover {
-        text-decoration: none;
-    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
-
 
 /*
  * 6.3 Section: Speaker
  */
 
 .mentors {
-    figure {
-        margin-bottom: 25px;
-    }
+  figure {
+    margin-bottom: 25px;
+  }
 }
 
 .speaker {
-    text-align: left;
-    color: #313131;
-    img:hover {
-        opacity: .7;
-    }
+  text-align: left;
+  color: #313131;
+  img:hover {
+    opacity: 0.7;
+  }
 }
 
 .fullwidth-image {
-    .row {
-        height: 158px;
-    }
+  .row {
+    height: 158px;
+  }
 }
 
 .photos {
-    background-color: #FFCC33;
+  background-color: #ffcc33;
 }
 
 .faq {
-    background-color: #E10360;
-    .section-title {
-        color: #FFFFFF;
-    }
+  background-color: #e10360;
+  .section-title {
+    color: #ffffff;
+  }
 }
-
 
 /*
  * 6.4 Section: Registration & Pricing
  */
-
 
 /*
  * 6.5 Section: Contribution
  */
 
 .contribution {
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
 }
-
 
 /*
  * 6.6 Section: Schedule
  */
 
 .schedule-box {
-    position: relative;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-    margin: 25px 0 0;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        bottom: 5px;
-        left: 5px;
-        border: 1px solid #fff;
-    }
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin: 25px 0 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border: 1px solid #fff;
+  }
 }
-
 
 /*
  * 6.7 Section: Schedule
  */
 
 .partner {
-    background-color: #f8f8f8;
-    .partner-box {
-        display: block;
-        opacity: 1;
-        height: 150px;
-        width: 150px;
-        margin: 25px auto;
-        transition: 0.5s all linear;
-    }
-    .partner-box-1 {
-        background: url(../images/partner/ios-goodies.png) no-repeat center center / contain;
-    }
-    .partner-box-2 {
-        background: url(../images/partner/sun.png) no-repeat center center / contain;
-    }
-    .partner-box-3 {
-        background: url(../images/partner/partner-3.png) no-repeat center center / contain;
-    }
-    .partner-box-4 {
-        background: url(../images/partner/partner-4.png) no-repeat center center / contain;
-    }
+  background-color: #f8f8f8;
+  .partner-box {
+    display: block;
+    opacity: 1;
+    height: 150px;
+    width: 150px;
+    margin: 25px auto;
+    transition: 0.5s all linear;
+  }
+  .partner-box-1 {
+    background: url(../images/partner/ios-goodies.png) no-repeat center center /
+      contain;
+  }
+  .partner-box-2 {
+    background: url(../images/partner/sun.png) no-repeat center center / contain;
+  }
+  .partner-box-3 {
+    background: url(../images/partner/partner-3.png) no-repeat center center /
+      contain;
+  }
+  .partner-box-4 {
+    background: url(../images/partner/partner-4.png) no-repeat center center /
+      contain;
+  }
 }
-
 
 /*
  * 6.8 Section: FAQ
  */
 
 .faq {
-    background-color: #FF0055;
-    .panel-heading {
-        cursor: pointer;
+  background-color: #ff0055;
+  .panel-heading {
+    cursor: pointer;
+  }
+  .faq-toggle.collapsed::before {
+    font-family: "Ionicons";
+    content: "\f218";
+    transition: 0.5s linear ease-out;
+    position: absolute;
+    left: 15px;
+  }
+  .faq-toggle::before {
+    position: absolute;
+    left: 15px;
+    font-family: "Ionicons";
+    content: "\f209";
+  }
+  .panel-group .panel + .panel {
+    margin-top: 15px;
+  }
+  .panel-default > .panel-heading {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000;
+    border-radius: 0;
+    padding: 0;
+    a {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      padding: 15px 15px 15px 35px;
     }
-    .faq-toggle.collapsed::before {
-        font-family: "Ionicons";
-        content: "\f218";
-        transition: 0.5s linear ease-out;
-        position: absolute;
-        left: 15px;
+  }
+}
+
+.sponsors {
+    background-color: #f8f8f8;
+  .col-md-2 {
+    text-align: center;
+  }
+  .sponsor-icon {
+    height: 200px;
+    img {
+      width: 100px;
     }
-    .faq-toggle::before {
-        position: absolute;
-        left: 15px;
-        font-family: "Ionicons";
-        content: "\f209";
-    }
-    .panel-group .panel+.panel {
-        margin-top: 15px;
-    }
-    .panel-default>.panel-heading {
-        color: #FFF;
-        background-color: #000000;
-        border-color: #000;
-        border-radius: 0;
-        padding: 0;
-        a {
-            position: relative;
-            display: block;
-            text-decoration: none;
-            padding: 15px 15px 15px 35px;
-        }
-    }
+  }
 }
 
 
@@ -222,47 +231,48 @@ h3.section-title {
  */
 
 .grid {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    &::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 .grid-item {
-    float: left;
-    overflow: hidden;
-    padding: 3px;
-    margin: 0;
-    width: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+  margin: 0;
+  width: 100%;
 }
 
+
 @media (min-width: 768px) {
-    .grid-item-sm-6 {
-        width: 50%;
-    }
-    .grid-item-sm-3 {
-        width: 25%;
-    }
-    .section-title {
-        margin: 0 0 30px;
-    }
-    figure {
-        margin-bottom: 0;
-    }
+  .grid-item-sm-6 {
+    width: 50%;
+  }
+  .grid-item-sm-3 {
+    width: 25%;
+  }
+  .section-title {
+    margin: 0 0 30px;
+  }
+  figure {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 992px) {
-    .schedule-box {
-        margin: 0;
-    }
-    .grid-item-md-6 {
-        width: 50%;
-    }
-    .grid-item-md-3 {
-        width: 25%;
-    }
+  .schedule-box {
+    margin: 0;
+  }
+  .grid-item-md-6 {
+    width: 50%;
+  }
+  .grid-item-md-3 {
+    width: 25%;
+  }
 }

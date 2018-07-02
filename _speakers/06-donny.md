@@ -1,5 +1,6 @@
 ---
 name: "Donny Wals"
+workshop_topic: "Instruments + building your own instrument"
 title: "Mentor"
 bio: "Donny is a curious and passionate iOS developer who loves to learn and share knowledge. He wrote two books on mastering iOS development and the third is underway . You'll often find him browsing through Apple's frameworks and documentation looking for hidden gems."
 status: "live"

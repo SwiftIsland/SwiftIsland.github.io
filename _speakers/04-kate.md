@@ -1,5 +1,6 @@
 ---
 name: "Kate Castellano"
+workshop_topic: "ARKit 2"
 title: "Senior iOS Developer at Clue."
 bio: "Kate is an Senior iOS Developer at Clue. One of her passions is to work towards the inclusion of  more women in technology and is the co-organizer of 'Women Who Go' Berlin chapter, event-manager for Berlin's 'Geekettes Mentorship Program' and a mentor in 'Learn It Girl!'"
 status: "live"

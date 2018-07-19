@@ -2,12 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="section-title">Mentors</h2>
+                <h2 class="section-title">Mentors for 2018</h2>
             </div>
         </div>
-
         <div class="row">
-
             {% for mentor in site.speakers limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
             <div class="col-md-3 col-sm-6">
                 <div class="speaker">
@@ -83,7 +81,6 @@
                 </div>
                 <!-- /.speaker -->
             </div>
-
             {% endif %} {% endfor %}
         </div>
 

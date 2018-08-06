@@ -2,30 +2,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="section-title">Photos</h2>
+                <h1 class="section-title">Photos</h1>
             </div>
         </div>
         
         <div class="row">
+            {% for object in site.gallery %}
+            <h2 class="section-title">{{ object.title }}</h2>
             <div class="col-md-12">
                 <ul>
+                    {% for image in object.conference-images %}
                     <li class="grid-item grid-item-sm-3">
-                        <a data-fancybox="gallery" href="assets/images/photos/photos-1.jpg"><img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg" width="200"></a>
+                        <a data-fancybox="gallery" href="{{ image.image }}.jpg">
+                            <img alt="" class="img-responsive center-block" src="{{ image.image }}_thumb.jpg" width="400" height="100">
+                        </a>
                     </li>
-                    <li class="grid-item grid-item-sm-3">
-                        <a data-fancybox="gallery" href="assets/images/photos/photos-2.jpg"><img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg" width="200"></a>
-                    </li>
-                    <li class="grid-item grid-item-sm-3">
-                        <a data-fancybox="gallery" href="assets/images/photos/photos-3.jpg"><img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg" width="200"></a>
-                    </li>
-                    <li class="grid-item grid-item-sm-3">
-                        <a data-fancybox="gallery" href="assets/images/photos/photos-4.jpg"><img alt="" class="img-responsive center-block" src="assets/images/photos/photos-4.jpg" width="200"></a>
-                    </li>
-                    <li class="grid-item grid-item-sm-3">
-                        <a data-fancybox="gallery" href="assets/images/photos/photos-5.jpg"><img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg" width="200"></a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>

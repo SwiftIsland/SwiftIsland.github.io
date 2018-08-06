@@ -11,8 +11,4 @@ collections:
   - activites
   - faqs
   - sponsors
-
-images:
-  - image: assets/images/photos/photos-1.jpg
-  - image: assets/images/photos/photos-2.jpg
-  - image: assets/images/photos/photos-3.jpg
+  - gallery

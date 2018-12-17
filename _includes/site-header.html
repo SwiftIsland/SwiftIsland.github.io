@@ -23,8 +23,8 @@
                     <line x1="8" y1="2" x2="8" y2="6"></line>
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
-                <h2>July 4 - 5</h2>
-                <span>2018</span>
+                <h2>{{ site.edition-date }}</h2>
+                <span>{{ site.edition-year }}</span>
             </div>
             <div class="card">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -36,8 +36,16 @@
                 <span>Netherlands</span>
             </div>
         </div>
-        <div class="buy-tickets">
-            <tito-button event="swiftisland/2018">Tickets</tito-button>
-        </div>
+        {% if site.presale == true %}
+            <div class="buy-tickets">
+                <tito-button event="swiftisland/2018">PRESALE</tito-button>
+            </div>
+        {% else %}
+            <div class="buy-tickets">
+                <tito-button event="swiftisland/2018">Tickets</tito-button>
+            </div>
+        {% endif %}
+
+        
     </div>
 </header>

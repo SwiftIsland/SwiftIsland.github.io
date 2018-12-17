@@ -6,6 +6,11 @@ author: "Niels van Hoorn, Sidney de Koning"
 baseurl: ''
 twitter: "https://twitter.com/swiftislandnl"
 email: "info@swiftisland.nl"
+edition-year: "2019"
+edition-date: "July 3 - 4"
+from-ticket-price: "€699"
+ticket-amount: "55"
+presale: true
 collections:
   - speakers
   - activites

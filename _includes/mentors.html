@@ -1,0 +1,91 @@
+<section id="mentors" class="section mentors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Mentors</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            {% for mentor in site.speakers limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker">
+                    <figure>
+                        <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
+                    </figure>
+                    <h4>{{ mentor.name }}</h4>
+                    <h3>{{ mentor.workshop_topic }}</h3>
+
+                    <p>{{ mentor.bio}}</p>
+                    <ul class="social-block">
+                        {% if mentor.twitter != '' %}
+                        <li>
+                            <a href="https://www.twitter.com/{{ mentor.twitter }}" target="_blank">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if mentor.linkedin != '' %}
+                        <li>
+                            <a href="https://www.linkedin.com/in/{{ mentor.linkedin }}" target="_blank">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if mentor.website != '' %}
+                        <li>
+                            <a href="{{ mentor.website }}" target="_blank">
+                                <i class="ion-ios-world-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+                <!-- /.speaker -->
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+
+        <div class="row">
+
+            {% for mentor in site.speakers limit: 4 offset: 4 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker">
+                    <figure>
+                        <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
+                    </figure>
+                    <h4>{{ mentor.name }}</h4>
+                    <h3>{{ mentor.workshop_topic }}</h3>
+
+                    <p>{{ mentor.bio}}</p>
+                    <ul class="social-block">
+                        {% if mentor.twitter != '' %}
+                        <li>
+                            <a href="https://www.twitter.com/{{ mentor.twitter }}" target="_blank">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if mentor.linkedin != '' %}
+                        <li>
+                            <a href="https://www.linkedin.com/in/{{ mentor.linkedin }}" target="_blank">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if mentor.website != '' %}
+                        <li>
+                            <a href="{{ mentor.website }}" target="_blank">
+                                <i class="ion-ios-world-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+                <!-- /.speaker -->
+            </div>
+
+            {% endif %} {% endfor %}
+        </div>
+
+    </div>
+</section>

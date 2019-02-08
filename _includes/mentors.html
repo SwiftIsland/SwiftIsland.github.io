@@ -8,14 +8,16 @@
 
         <div class="row">
 
-            {% for mentor in site.speakers limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
-            <div class="col-md-3 col-sm-6">
+            {% for mentor in site.mentors limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3 col-sm-3">
                 <div class="speaker">
                     <figure>
                         <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
                     </figure>
                     <h4>{{ mentor.name }}</h4>
+                    {% if mentor.workshop_topic != '' %}
                     <h3>{{ mentor.workshop_topic }}</h3>
+                    {% endif %}
 
                     <p>{{ mentor.bio}}</p>
                     <ul class="social-block">
@@ -48,8 +50,8 @@
 
         <div class="row">
 
-            {% for mentor in site.speakers limit: 4 offset: 4 %} {% if mentor.status == 'live' %}
-            <div class="col-md-3 col-sm-6">
+            {% for mentor in site.mentors limit: 4 offset: 4 %} {% if mentor.status == 'live' %}
+            <div class="col-md-3 col-sm-3">
                 <div class="speaker">
                     <figure>
                         <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">

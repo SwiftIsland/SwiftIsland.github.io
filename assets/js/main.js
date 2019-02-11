@@ -26,3 +26,21 @@ function handleTopNavAnimation() {
 */
 
 smoothScroll.init();
+
+jQuery(function(){
+	var callback
+	$('.register-interest-form').submit(function(){
+    name  = $('#register-name').val()
+    email = $('#register-email').val()
+
+    if($.trim(name) != '' && $.trim(email) != '')
+    {
+      url = ["https://ti.to/swiftisland/swift-island-2019/interested_users/subscribe.json?&interested_user[email]=", email , "&interested_user[name]=", name, "&callback=?"].join('')
+      $.getJSON(url, null, function(data){})
+      .promise().done(function(){
+        $('.register-interest-form').html(['<h3 class="section-title">', 'Thanks ', name.split(' ')[0], '</h3>'].join(''))
+      })
+    }
+	return false;
+  })
+})

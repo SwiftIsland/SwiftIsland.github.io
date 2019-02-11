@@ -36,11 +36,7 @@
                 <span>Netherlands</span>
             </div>
         </div>
-        {% if site.presale == true %}
-            <div class="buy-tickets">
-                <tito-button event="swiftisland/2018">PRESALE</tito-button>
-            </div>
-        {% else %}
+        {% if site.presale == false %}
             <div class="buy-tickets">
                 <tito-button event="swiftisland/2018">Tickets</tito-button>
             </div>

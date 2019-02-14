@@ -9,7 +9,8 @@
             <div class="col-md-12">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     {% for faq in site.faqs %}
-
+                    {% if faq.disabled %}
+                    {% else %}
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading-{{ faq.index }}">
                             <h4 class="panel-title">
@@ -24,11 +25,8 @@
                             </div>
                         </div>
                     </div>
-
+                    {% endif %}
                     {% endfor %}
-
-
-
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 name: "Paul Hudson"
 workshop_topic: ""
 title: "Mentor"
-bio: ""
+bio: "Paul is the author of Hacking with Swift, Pro Swift, Swift Design Patterns, Testing Swift, Server-Side Swift, Swift Coding Challenges, and more. Suffice it to say, he quite likes Swift. And coffee. (But mostly Swift.) (And coffee.)"
 status: "live"
 website: "https://www.hackingwithswift.com/"
 twitter: "twostraws"

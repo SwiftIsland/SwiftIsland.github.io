@@ -113,11 +113,11 @@ h3.section-title {
 
  .mailing-list {
     background-color: #e10360;
-        
+
     .section-title {
         color: #ffffff;
     }
-    
+
     p {
         color: #ffffff;
     }
@@ -125,9 +125,8 @@ h3.section-title {
     .register-interest-form {
 
         border-radius: 0;
-        inline: none;
         box-shadow: none;
-        
+
         font-size: 16px;
         line-height: 1.6;
         display: block;
@@ -139,13 +138,17 @@ h3.section-title {
     }
 
     input#register-name, input#register-email {
-        color: #ddccoo;
+        color: black;
         display: flex;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
         font-size: 16px;
-        inline: none;
-        
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+
+
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
         box-sizing: border-box;
@@ -153,7 +156,24 @@ h3.section-title {
         &:focus {
             box-shadow: none;
             border-color: #ccc;
-            
+
+        }
+    }
+    .tito-submit {
+        font-size: 20px !important;
+        height: 45px !important;
+        font-weight: normal;
+        width: 100% !important;
+        background: rgba(255,255,255, 0.5) !important;
+        border-color: rgba(255,255,255, 0.5) !important;
+        transition: transform 0.2s ease-out, background 0.2s ease-out;
+
+        &:hover {
+            color: #000 !important;
+            background: #fff !important;
+
+            box-shadow: 0 0 5px #ccc !important;
+            transform: scale(1.04)
         }
     }
  }

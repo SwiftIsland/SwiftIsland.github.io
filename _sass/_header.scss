@@ -195,6 +195,21 @@
   content: "Discount\00a0Package";
 }
 
+.tito-ticket-name-wrapper {
+  color: #adadad;
+  font-size: 14px !important;
+  ul li {
+    margin-bottom: 0;
+  }
+}
+.tito-ticket-description {
+    font-size: 14px;
+}
+.tito-ticket-name {
+  color: rgb(51, 51, 51);
+}
+
+
 .logo-swift {
   font-weight: 700;
 }

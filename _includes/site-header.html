@@ -36,7 +36,11 @@
                 <span>Netherlands</span>
             </div>
         </div>
-        {% if site.presale == false %}
+        {% if site.presale == true %}
+        <div class="buy-tickets">            
+            <a data-scroll href="#mailing-list">Join List</a>
+        </div>
+        {% else %}
         <div class="buy-tickets">            
             <tito-button event="swiftisland/{{ site.edition-year }}">Tickets!</tito-button>
         </div>

@@ -51,6 +51,16 @@ jQuery(function() {
               "</h3>"
             ].join("")
           );
+        })
+        .fail(function() {
+          $(".register-interest-form").html(
+            [
+              "<h3 class='section-title'>",
+              "There was an error adding your email, please contact",
+              "info@swiftisland.nl",
+              "</h3>"
+            ].join(" ")
+          );
         });
     }
     return false;

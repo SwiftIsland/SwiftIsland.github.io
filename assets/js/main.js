@@ -2,11 +2,11 @@
  * Change Navbar color while scrolling
  */
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   handleTopNavAnimation();
 });
 
-$(window).load(function() {
+$(window).load(function () {
   handleTopNavAnimation();
 });
 
@@ -26,9 +26,9 @@ function handleTopNavAnimation() {
 
 smoothScroll.init();
 
-jQuery(function() {
+jQuery(function () {
   var callback;
-  $(".register-interest-form").submit(function() {
+  $(".register-interest-form").submit(function () {
     name = $("#register-name").val();
     email = $("#register-email").val();
 
@@ -38,27 +38,40 @@ jQuery(function() {
         email,
         "&interested_user[name]=",
         name,
-        "&callback=?"
+        "&callback=?",
       ].join("");
-      $.getJSON(url, null, function(data) {})
+      $.getJSON(url, null, function (data) {})
         .promise()
-        .done(function() {
+        .done(function () {
           $(".register-interest-form").html(
             [
               '<h3 class="section-title">',
               "Thanks ",
               name.split(" ")[0],
-              "</h3>"
+              "</h3>",
             ].join("")
           );
         })
-        .fail(function() {
+        .fail(function (error) {
+          if (
+            error?.responseJSON?.errors?.email?.[0] ===
+            "has already registered interest"
+          ) {
+            $(".register-interest-form").html(
+              [
+                "<h3 class='section-title'>",
+                "You're already on the list!",
+                "</h3>",
+              ].join(" ")
+            );
+            return;
+          }
           $(".register-interest-form").html(
             [
               "<h3 class='section-title'>",
               "There was an error adding your email, please contact",
               "info@swiftisland.nl",
-              "</h3>"
+              "</h3>",
             ].join(" ")
           );
         });

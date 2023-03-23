@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="author" content="Niels van Hoorn, Sidney de Koning" />
+    <meta name="description" content="Swift Island An experimental Swift conference on an actual island.">
+
+    <title>Swift Island</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    
+    <!-- Ti.to v2 version -->
+    <script src="https://js.tito.io/v2" async></script>
+    <script src="https://js.tito.io/v2/with/hits" async></script>
+    
+    <!-- Sharing is caring - I care. -->
+    <meta property="og:title" content="Swift Island">
+    <meta property="og:description" content="Swift Island An experimental Swift conference on an actual island.">
+    <meta property="og:image" content="/assets/images/share_card.png">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Swift Island">
+
+    <!-- Google Analytics -->
+    	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-365433-17"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-365433-17');
+	</script>
+
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+
+	<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- logo -->
+            <div class="site-branding">
+                <a class="logo" href="index.html">
+
+                    <!-- logo image  -->
+                    <img src="assets/images/logo-lines.svg" width="42" height="42" alt="Swift Island Logo">
+                    <span class="logo-text logo-swift">Swift</span>
+                    <span class="logo-text logo-island">Island</span>
+                </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- navigation menu -->
+                <li class="active"><a data-scroll href="#about">About</a></li>
+                <!-- <li><a data-scroll href="#mentors">Mentors</a></li> -->
+                <li><a data-scroll href="#location">Location</a></li>
+                <!-- <li><a data-scroll href="#travel">Travel</a></li> -->
+                <li id="nav-faq"><a data-scroll href="#faq">FAQ</a></li>
+                <li><a data-scroll href="#photos">Photos</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav> <header id="site-header" class="site-header valign-center">
+    <div class="intro">
+        <div class="header-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112">
+                <g transform="translate(11 11)">
+                    <path d="M 0 90 L 59 90 L 30 60 Z" fill="#DD0055"></path>
+                    <path d="M 0 30 L 59 30 L 30 0 Z" transform="translate(30 60) rotate(-180 29.5 15)" fill="#FF0055"></path>
+                    <path d="M 30 60 L 89 60 L 60 30 Z" fill="#ff8822"></path>
+                    <path d="M 0 30 L 59 30 L 30 0 Z" transform="translate(1 30) rotate(-180 29.5 15)" fill="#ffaa22"></path>
+                    <path d="M 1 30 L 60 30 L 31 0 Z" fill="#FFCc33"></path>
+                    <path d="M 0 30 L 59 30 L 30 0 Z" transform="translate(31 0) rotate(-180 29.5 15)" fill="hsl(51, 100%, 65%)"></path>
+                </g>
+            </svg>
+        </div>
+        <h1 class="logo-swift">Swift</h1>
+        <h1 class="logo-island">Island</h1>
+        <div class="details">
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <h2>Sept 5 - 6</h2>
+                <span>2023</span>
+            </div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <h2>Texel</h2>
+                <span>Netherlands</span>
+            </div>
+        </div>
+        
+        <div class="buy-tickets">            
+            <tito-button event="swiftisland/2023">Tickets!</tito-button>
+        </div>
+        
+    </div>
+</header>     <section id="mailing-list" class="section mailing-list text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="section-title">Stay up-to-date!</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Fill in your email and join our mailinglist to stay up to date with the latest news and speaker announcements.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <form class="register-interest-form">
+                  <div class="form-group">
+                    <input id="register-name"
+                          type="text"
+                          placeholder="Name"
+                          class="register-name input-text"
+                          autocomplete="off">
+                    <input id="register-email"
+                          type="text"
+                          placeholder="Email"
+                          class="register-email input-text"
+                          autocomplete="off"
+                          autocapitalize="off">
+                    <input type="submit" class="tito-submit" value="Sign up" />
+                  </div>
+                </form>
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section>
+
+	<section id="about" class="section about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">About</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <p> Swift Island is an all-inclusive experimental conference happening <i>after</i> Apple's WWDC 2023.</p>
+
+                <h3 class="section-title">The Pitch</h3>
+
+
+                <p>You know that feeling you get after WWDC ends, when all you want to do is catch up on all the videos Apple
+                    just released? That urgent need to experiment and play with all the new betas, frameworks and APIs. The
+                    overwhelming desire to spend hours on all of the above, quickly followed by the sinking realization that
+                    you can't - because you have actual work to do.</p>
+
+                <p>
+                    <i>Yep, we've all been there and that feeling sucks.</i>
+                </p>
+
+                <p>
+                    <strong>Our mission is to break the cycle!</strong>
+                </p>
+
+                <p>Swift Island is an experimental conference in the broadest sense. After WWDC, we invite
+                    you to join us for a hands-on experience with all of Apple’s newly announced API's and Frameworks, in
+                    sessions guided by top-notch mentors.</p>
+
+                <figure>
+                    <img alt="" class="img-responsive" src="assets/images/seal.jpg">
+                </figure>
+
+            </div>
+            <!-- /.col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3 class="section-title multiple-title">The Format</h3>
+
+                <p>The format is very simple: 2 workshop days, choose from 4 sessions per day provided by 8 mentors. Everyone pair programs
+                    and has fun.</p>
+
+                <h3 class="section-title multiple-title">The Kicker</h3>
+                <p>A conference ticket is all inclusive: You will get two days of workshops, three days of lodging in a shared
+                    cabin (private rooms) and all the food you need for breakfast, lunch and dinner during your stay. And a bike.
+                    <i>And did we mention it’s on an island?</i>
+                </p>
+
+                <p>It's called Texel (pronounced tes-sel) and it’s one of the five Frisian Islands, located in the Wadden Sea,
+                    which is a
+                    <a href="http://whc.unesco.org/en/list/1314" target="_blank">Unesco World Heritage</a>. In short - it's an island in the Netherlands and it's awesome.</p>
+
+                <h3 class="section-title multiple-title">What to expect?</h3>
+
+                <p>Beyond the experience of being introduced to WWDC material by top-notch mentors on a frikkin' island, you’ll
+                    also enjoy:
+                    <p>
+
+                        <ul class="list-arrow-right">
+                            <li>
+                                <b>Seals.</b> Actual real life seals (the fluffy kind, not the military kind).</li>
+                            <li>
+                                <b>Choose from eight topics</b> covered in workshops.</li>
+                        </ul>
+
+            </div>
+            <!-- /.col-sm-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+    <section id="facts" class="section facts text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <h2>Sept 5 - 6</h2>
+                    <span>2023 </span>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h2>Texel</h2>
+                    <span>Netherlands</span>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7" y2="7"></line>
+                    </svg>
+                    <h2>60 Tickets</h2>
+                    <span>Starting at €997</span>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <h2>8 Mentors</h2>
+                    <span>50-50 Men/Women</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section>
+
+    <section id="location" class="section location">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Location</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">Swift Island Location</h3>
+                <address>
+                    <p>
+                        <a href="https://www.prins-hendrik.nl/en/">Prins Hendrik Texel</a>
+                        <br>Stuifweg 13
+                        <br>1794 HA Oosterend
+                        <br> Email:
+                        <a href="mailto:info@swiftisland.nl">info@swiftisland.nl</a>
+                    </p>
+                </address>
+            </div>
+            <div class="col-sm-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153263.20648856516!2d4.757004624552143!3d53.114903679931224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf3200fd5bd657%3A0xddef03de5d7239f4!2sPrins+Hendrik+Texel!5e0!3m2!1sen!2snl!4v1521396238096"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+    <section class="section fullwidth-image beach1 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</section>
+
+    <section id="faq" class="section faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">FAQ</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-0">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-0"
+                                    aria-expanded="true" aria-controls="collapse-0">Can I become a mentor?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-0">
+                            <div class="panel-body">
+                                For this year we are finalising the details with the last mentors, so currently we’re all set. Please <a href='mailto:info@swiftisland.nl'>send us an email</a> though, so we can contact you if one of our mentors has to cancel. And we will definitely put you on the list for next year!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-1">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1"
+                                    aria-expanded="true" aria-controls="collapse-1">Are these images actually from the island?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Yes! All photographs used on this site were shot on Texel. Some of them are shot by our attendees from 2018.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-2">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2"
+                                    aria-expanded="true" aria-controls="collapse-2">Are there different kind of rooms?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+                            <div class="panel-body">
+                                Yes. The venue has bungalows and regular hotel rooms. Bungalows have 3 bedrooms, are more spacious, and have a shared kitchen and living room, while the Hotel Rooms have a private bathrooms. With your ticket you always get a private bedroom and you buy a ticket you can specify a preferred room type. While we try to accommodate everyone towards their preference, we can't guarantee you the room-type of your choice.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-3">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3"
+                                    aria-expanded="true" aria-controls="collapse-3">Can I specify who I want to share a bungalow with?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+                            <div class="panel-body">
+                                Sure! Once you both have booked a ticket, please <a href='mailto:info@swiftisland.nl'>send us an email</a> and we will make sure you will be placed in a bungalow together.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-4">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-4"
+                                    aria-expanded="true" aria-controls="collapse-4">Can I buy a ticket without accomodation?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4">
+                            <div class="panel-body">
+                                No, because there are no other options for accomdation in the vicinity of the venue. Part of the atmosphere of the conference is having everyone in the same location for the duration of the conference.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-5">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-5"
+                                    aria-expanded="true" aria-controls="collapse-5">Is the content the same as WWDC?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5">
+                            <div class="panel-body">
+                                No. While the topics will be inspired by what is announced at WWDC, there are no talks at Swift Island, only workshops. During those workshops you get hands-on experience with these topics. So even if you are lucky enough to go to WWDC, Swift Island will be a great way to dive in deeper. Having been to WWDC is not at all a requirement, though. We expect the attendees to have some basic knowledge of what is announced, but we will quickly get you up to speed if you did not find the time to look into it yet.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-6">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-6"
+                                    aria-expanded="true" aria-controls="collapse-6">Is Swift Island during WWDC?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-6">
+                            <div class="panel-body">
+                                No. It happening after it. WWDC usually takes place in <i>June</i>, while Swift Island is the 5th and 6th of <i>September</i>. You will have some time to rest, catch up, and look forward to a great time on The Netherland's most beautiful island.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-7">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-7"
+                                    aria-expanded="true" aria-controls="collapse-7">What does all-inclusive mean?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-7">
+                            <div class="panel-body">
+                                Conference tickets to Swift Island are all-inclusive. This means that apart from the conference, you will get accommodation and breakfast for three days, and lunch and dinner during the conference days (Tuesday and Wednesday), and of course a magnificent view.<br/> We are also making sure there's enough bikes for everyone during the conference. And seals, those are also included 😉.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-8">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-8"
+                                    aria-expanded="true" aria-controls="collapse-8">I'm confused by the conference dates. When is it exactly and which nights is accommodation included?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8">
+                            <div class="panel-body">
+                                The conference days are the 5th and 6th of September, the 3 nights of accommodation are the nights around that. We expect everyone to arrive on the 4th of September, have two awesome conference days and leave on the 7th of September. Except if you bought extended accommodation of course.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-9">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-9"
+                                    aria-expanded="true" aria-controls="collapse-9">I have one or more kids older than 3 years. Can I bring them?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-9">
+                            <div class="panel-body">
+                                Kids up until 3 years can visit the conference for free. The reason for this is that there are some travel beds for kids on the venue site. If you have one or more kids that you would like to bring, please <a href='mailto:info@swiftisland.nl'>contact us via email</a> so we can discuss the options.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-10">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-10"
+                                    aria-expanded="true" aria-controls="collapse-10">What is your refund policy?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-10">
+                            <div class="panel-body">
+                                For this year we will: <ul> <li>Refund the full amount (minus transaction costs) up until 3 months before the conference (April 2nd)</li> <li>Refund €500 up until 1 month before the conference (June 2nd)</li> </ul> And you can always transfer your ticket to someone else.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-11">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-11"
+                                    aria-expanded="true" aria-controls="collapse-11">Why is there no VAT/BTW rate mentioned on my invoice?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-11">
+                            <div class="panel-body">
+                                There’s no VAT/BTW rate. We have a special tax rate because we use a 'travel agency arrangement'. More info can be found on the Dutch <a href='https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/reisbureauregeling/' target='_blank'>tax service</a>.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-12">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-12"
+                                    aria-expanded="true" aria-controls="collapse-12">Can you provide me with a Visa invitation?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-12">
+                            <div class="panel-body">
+                                You can just send us an email with the template letter you'd like us to sign and wi'll send it back to you. You can send this to <a href='mailto:info@swiftisland.nl'>our email</a>.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-13">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-13"
+                                    aria-expanded="true" aria-controls="collapse-13">Do you offer a diversity sponsorship?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse-13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-13">
+                            <div class="panel-body">
+                                As part of Swift Islands's ongoing commitment to encourage diversity in the Swift community, we are pleased to offer diversity sponsorships at Swift Island 2023 to support people interested in attending the conference. All who identify as members of groups underrepresented in tech (Specifically people who program for the Apple ecosystem) are encouraged to apply.<br/><br/> You as attendee can sponsor a person who wants to apply. With your order you can add a 'Sponsored ticket'. You can order as many as you want.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section id="photos" class="section photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Photos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="grid">
+
+                    <li class="grid-item grid-item-sm-6">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-4.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-9.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-10.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-11.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-12.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-13.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="codeofconduct" class="section codeofconduct">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Code of Conduct</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following
+                    code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all
+                    participants to help ensure a safe environment for everybody.</p>
+
+                <h3 class="section-title multiple-title">Need Help? Contact Us!</h3>
+                <p>
+                    Niels van Hoorn
+                    <br/> Twitter:
+                    <a href="https://twitter.com/nvh">@nvh</a>
+                    </br>
+                    Email:
+                    <a href="mailto:niels@swiftisland.nl">niels@swiftisland.nl</a>
+                </p>
+                <p>
+                    Sidney de Koning
+                    <br/> Twitter:
+                    <a href="https://twitter.com/sidneydekoning">@sidneydekoning</a>
+                    <br/> Email:
+                    <a href="mailto:sidney@swiftisland.nl">sidney@swiftisland.nl</a>
+                </p>
+                <h3 class="section-title multiple-title">The Quick Version</h3>
+                <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following
+                    code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all
+                    participants to help ensure a safe environment for everybody.
+                </p>
+                <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless
+                    of gender, gender identity and expression, age, sexual orientation, disability, physical appearance,
+                    body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment
+                    of conference participants in any form. Sexual language and imagery is not appropriate for any conference
+                    venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating
+                    these rules may be sanctioned or expelled from the conference without a refund at the discretion of the
+                    conference organisers.
+                </p>
+
+            </div>
+            <!-- /.col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3 class="section-title multiple-title">The Less Quick Version</h3>
+                <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual
+                    orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices,
+                    sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or
+                    recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome
+                    sexual attention.</p>
+                <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+                <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised
+                    images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes,
+                    or otherwise create a sexualised environment.</p>
+                <p>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate,
+                    including warning the offender or expulsion from the conference with no refund.</p>
+                <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+                    contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing
+                    branded clothing and/or badges.</p>
+                <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement,
+                    provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the
+                    conference. We value your attendance.</p>
+                <p>We expect participants to follow these rules at conference and workshop venues and conference-related social
+                    events.</p>
+            </div>
+            <!-- /.col-sm-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+ <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-block">
+                    <li>
+                        <a href="https://twitter.com/swiftislandnl">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/swift.island/">
+                            <i class="ion-social-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@swiftisland.nl">
+                            <i class="ion-email"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<!-- script -->
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

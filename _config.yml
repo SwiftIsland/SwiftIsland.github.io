@@ -11,7 +11,7 @@ edition-year: "2023"
 edition-date: "Sept 5 - 6"
 from-ticket-price: "€997"
 ticket-amount: "60"
-presale: true
+presale: false
 collections:
   - mentors
   - activites

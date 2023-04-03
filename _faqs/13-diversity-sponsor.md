@@ -1,6 +1,9 @@
 ---
 index: 13
 title: "Do you offer a diversity sponsorship?"
-body: "As part of Swift Islands's ongoing commitment to encourage diversity in the Swift community, we are pleased to offer diversity sponsorships at Swift Island 2023 to support people interested in attending the conference. All who identify as members of groups underrepresented in tech (Specifically people who program for the Apple ecosystem) are encouraged to apply.<br/><br/>
-You as attendee can sponsor a person who wants to apply. With your order you can add a 'Sponsored ticket'. You can order as many as you want."
+body: "We are committed to promoting diversity and inclusivity in the tech industry. From the first edition we have had a 50-50 men/women split for mentors. We recognize that underrepresented groups often face barriers to attending conferences and workshops, which is why we are proud to offer a diversity program to those who might not be able to attend Swift Island otherwise.<br/><br/>
+
+Our diversity program provides discounted tickets to individuals from underrepresented groups, including but not limited to: women, people of color, individuals with disabilities, LGBTQIA+ people, and those from low-income backgrounds. If you are interested in applying for a diversity ticket for Swift Island, please <a href='mailto:info@swiftisland.nl'>send us an email</a> describing why you are applicable for a diversity ticket. We value your privacy and will keep all information confidential.<br/><br/>
+
+We have Diversity Sponsorship ❣️ tickets available to help facilitate this program. Would you like to contribute to promoting diversity in a simple way? <a href='https://ti.to/swiftisland/2023/with/diversity-sponsorship'>Purchase a sponsorship ticket now</a>!"
 ---

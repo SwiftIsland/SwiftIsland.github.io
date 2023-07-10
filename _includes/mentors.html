@@ -7,18 +7,20 @@
         </div>
 
         <div class="row">
+            {% for mentor in site.mentors limit: 4 offset: 0 %}
+            {% if mentor.year == "2023" %} 
 
-            {% for mentor in site.mentors limit: 4 offset: 0 %} {% if mentor.status == 'live' %}
             <div class="col-md-3 col-sm-6">
                 <div class="speaker">
+                    {% if mentor.image != '' %}
                     <figure>
                         <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
                     </figure>
-                    <h4>{{ mentor.name }}</h4>
-                    <h3>{{ mentor.workshop_topic }}</h3>
-
+                    {% endif %}
+                    <h4 style="text-align: center;">{{ mentor.name }}</h4>
+                    
                     <p>{{ mentor.bio}}</p>
-                    <ul class="social-block">
+                    <ul class="social-block" style="text-align: center;">
                         {% if mentor.twitter != '' %}
                         <li>
                             <a href="https://www.twitter.com/{{ mentor.twitter }}" target="_blank">
@@ -39,24 +41,28 @@
                         </li>
                         {% endif %}
                     </ul>
-
+                
                 </div>
                 <!-- /.speaker -->
-            </div>
-            {% endif %} {% endfor %}
+            </div>   
+            {% endif %}     
+            {% endfor %}
         </div>
         <div class="row">
-            {% for mentor in site.mentors limit: 4 offset: 4 %} {% if mentor.status == 'live' %}
+            {% for mentor in site.mentors limit: 4 offset: 4 %}
+            {% if mentor.year == "2023" %} 
+
             <div class="col-md-3 col-sm-6">
                 <div class="speaker">
+                    {% if mentor.image != '' %}
                     <figure>
                         <img alt="{{ mentor.name }}" class="img-responsive center-block" src="{{ mentor.image }}">
                     </figure>
-                    <h4>{{ mentor.name }}</h4>
-                    <h3>{{ mentor.workshop_topic }}</h3>
-
+                    {% endif %}
+                    <h4 style="text-align: center;">{{ mentor.name }}</h4>
+                    
                     <p>{{ mentor.bio}}</p>
-                    <ul class="social-block">
+                    <ul class="social-block" style="text-align: center;">
                         {% if mentor.twitter != '' %}
                         <li>
                             <a href="https://www.twitter.com/{{ mentor.twitter }}" target="_blank">
@@ -77,9 +83,12 @@
                         </li>
                         {% endif %}
                     </ul>
+                
                 </div>
-            </div>
-            {% endif %} {% endfor %}
+                <!-- /.speaker -->
+            </div>   
+            {% endif %}     
+            {% endfor %}
         </div>
     </div>
 </section>

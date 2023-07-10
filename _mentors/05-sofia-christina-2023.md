@@ -1,5 +1,5 @@
 ---
-name: "Sofia Christina Larsson"
+name: "Sofia Larsson"
 workshop_topic: ""
 title: "Mentor"
 bio: "Sofia’s developer journey began in SwiftPlaygrounds. In 2020 she was accepted to Apple Entrepreneur Camp. Sofia has a bachelor’s degree in Textile Science and Engineering, and today she’s an indie developer building the recipe organizer Ambre."

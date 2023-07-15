@@ -7,6 +7,6 @@ status: "live"
 year: "2023"
 website: "https://www.swiftwithvincent.com"
 twitter: "v_pradeilles"
-linkedin: "https://www.linkedin.com/in/vincentpradeilles/"
+linkedin: "vincentpradeilles/"
 image: "assets/images/speakers/speaker-vincent-2023.png"
 ---

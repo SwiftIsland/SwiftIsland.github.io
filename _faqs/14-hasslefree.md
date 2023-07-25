@@ -6,13 +6,13 @@ From Schiphol we have a coach/bus waiting to take you to Texel where the confere
 
 <strong>The special Swift Island Hassle-free bus leaves from Schiphol:</strong><br/>
 <ul>
-<li><strong>Monday 4th of September</strong>: 16.45h - Arrival at Texel 19.30h</li>
+<li><strong>Monday 4th of September</strong>: 17.00h - Arrival at Texel 19.30h</li>
 </ul>
 
 <strong>Departure times from Texel to Schiphol (the are two busses leaving the island)</strong>: 
 <ul>
-<li><strong>Thursday 7th of September</strong> 8.00h - Arrival at Schiphol 10.45h</li>
-<li><strong>Thursday 7th of September</strong> 14.00h - Arrival at Schiphol 16.45h</li>
+<li><strong>Thursday 7th of September</strong> 8.15h - Arrival at Schiphol 10.45h</li>
+<li><strong>Thursday 7th of September</strong> 14.15h - Arrival at Schiphol 16.45h</li>
 </ul>
 
 <i>Please take into account when buying a plane ticket that you need to be on time at Schiphol Airport, calculate at lease two hours for checkout from the Airport. So book your ticket accordingly.</i><br><br>

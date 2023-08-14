@@ -13,9 +13,9 @@
     <title>{% if site.title %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/scss/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/bower_components/bootstrap/dist/css/bootstrap.min.css?cacheKiller={{ 'now' | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/bower_components/ionicons/css/ionicons.min.css?cacheKiller={{ 'now' | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/scss/main.css?cacheKiller={{ 'now' | date: '%s' }}">
     
     <!-- Ti.to v2 version -->
     <script src="https://js.tito.io/v2" async></script>

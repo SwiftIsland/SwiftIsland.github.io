@@ -4,10 +4,10 @@
 
             <!-- logo -->
             <div class="site-branding">
-                <a class="logo" href="index.html">
+                <a class="logo" href="{{ site.url }}/index.html">
 
                     <!-- logo image  -->
-                    <img src="assets/images/logo-lines.svg" width="42" height="42" alt="Swift Island Logo">
+                    <img src="{{ site.url }}/assets/images/logo-lines.svg" width="42" height="42" alt="Swift Island Logo">
                     <span class="logo-text logo-swift">Swift</span>
                     <span class="logo-text logo-island">Island</span>
                 </a>
@@ -27,7 +27,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- navigation menu -->
                 {% for link in site.data.navigation %}
-                <li ><a data-scroll href="{{ link.url }}">{{ link.name }}</a></li>
+                <li ><a data-scroll href="{{ site.url }}/{{ link.url }}">{{ link.name }}</a></li>
                 {% endfor %}
             </ul>
         </div>

@@ -50,6 +50,34 @@ h3.section-title {
 }
 
 /*
+ *  App download
+ */
+
+ .app-standalone-page {
+    background-color: #e10360;
+
+    .section-title {
+        color: #ffffff;
+    }
+
+    p {
+        color: #ffffff;
+    }
+ }
+
+ .app-homepage {
+    background-color: #ffffff;
+
+    .section-title {
+        color: #000000;
+    }
+
+    p {
+        color: #000000;
+    }
+}
+
+/*
 * 6.2 Section: Facts
 */
 

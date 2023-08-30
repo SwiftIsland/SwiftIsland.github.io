@@ -302,6 +302,17 @@ h3.section-title {
     }
 }
 
+.qr {
+    width: 200px;
+    height: 200px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+
 .sponsors {
     background-color: #f8f8f8;
     .col-md-2 {

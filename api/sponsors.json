@@ -1,0 +1,14 @@
+---
+layout: none
+---
+{ "apps": [
+    {%- for sponsor in site.sponsors %}
+    {
+      "title":      {{- sponsor.title | jsonify }},
+      "url":        {{- sponsor.link | jsonify }},
+      "image":"https://swiftisland.nl/assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase }}.png{% endif %}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor -%} 
+  ]
+}

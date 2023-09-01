@@ -1,5 +1,5 @@
 ---
 title: "Hacking with Swift"
-icon: "hackingwithswift.svg"
+icon: "hackingwithswift.png"
 link: "https://www.hackingwithswift.com"
 ---

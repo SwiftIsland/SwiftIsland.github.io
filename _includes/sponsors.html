@@ -21,24 +21,14 @@
             </div>
         </div>
         <div class="row">
+            {% for sponsor in site.content_sponsors %}
             <div class="col-md-4">
-                <h4>objc.io</h4>
-                <a href="https://www.objc.io/" target="_blank">
-                    <img src="assets/images/sponsors/objcio.png" width="100%" />
+                <h4>{{ sponsor.title }}</h4>
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase }}.png{% endif %}" width="100%" />
                 </a>
             </div>
-        	<div class="col-md-4">
-                <h4>Donny Wals</h4>
-                <a href="https://www.donnywals.com/" target="_blank">
-                    <img src="assets/images/sponsors/donnywals.png" width="100%" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h4>Hacking with Swift</h4>
-                <a href="https://www.hackingwithswift.com" target="_blank">
-                    <img src="assets/images/sponsors/hackingwithswift.svg" width="100%" />
-                </a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

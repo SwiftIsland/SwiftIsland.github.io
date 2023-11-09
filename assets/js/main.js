@@ -34,7 +34,7 @@ jQuery(function () {
 
     if ($.trim(name) != "" && $.trim(email) != "") {
       url = [
-        "https://checkout.tito.io/swiftisland/2024/interested_users.json?&interested_user[email]=",
+        "https://ti.to/swiftisland/2023/interested_users/subscribe.json?&interested_user[email]=",
         email,
         "&interested_user[name]=",
         name,

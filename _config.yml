@@ -1,14 +1,14 @@
 remote_theme: swift-island
 title: "Swift Island"
 description: "An experimental Swift conference on an actual island."
-sub-title: "An experimental conference happening after Apple's WWDC 2023."
+sub-title: "An experimental conference happening after Apple's WWDC 2024."
 author: "Niels van Hoorn, Sidney de Koning"
 baseurl: ""
 twitter: "https://twitter.com/swiftislandnl"
 instagram: "https://www.instagram.com/swift.island/"
 email: "info@swiftisland.nl"
-edition-year: "2023"
-edition-date: "Sept 5 - 6"
+edition-year: "2024"
+edition-date: "Aug 27 - 29"
 from-ticket-price: "€997"
 ticket-amount: "60"
 presale: true

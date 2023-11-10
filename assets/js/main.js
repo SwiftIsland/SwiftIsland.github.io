@@ -33,15 +33,9 @@ jQuery(function () {
     email = $("#register-email").val();
 
     if ($.trim(name) != "" && $.trim(email) != "") {
-      url = [
-        "https://ti.to/swiftisland/2023/interested_users/subscribe.json?&interested_user[email]=",
-        email,
-        "&interested_user[name]=",
-        name,
-        "&callback=?",
-      ].join("");
-      $.getJSON(url, null, function (data) {})
-        .promise()
+      url = "https://checkout.tito.io/swiftisland/2024/interested_users.json"
+      $.post(url, {"interested_user":{"email":email,"name":name}}, function (data) {})
+      .promise()
         .done(function () {
           $(".register-interest-form").html(
             [

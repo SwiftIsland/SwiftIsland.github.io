@@ -43,7 +43,7 @@ jobs:
         with:
           firebase-token: ${{ secrets.FIREBASE_TOKEN }}
       - name: Import Firebase JSON
-        run: firebase --project ${{ secrets.FIREBASE_PROJECT }} database:get /faq | jq . > ./api/faq.json
+        run: firebase --project ${{ secrets.FIREBASE_PROJECT }} database:get /faq
 
   # Deployment job
   deploy:

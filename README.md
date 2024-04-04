@@ -39,6 +39,26 @@ Or install it yourself as:
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
+# Firebase
+This website uses firebase as a backend.
+This gets the json from Firebase and strips the first line using sed. This first line contains warnings we do not need. If we dont strip, jq gives an parse error since it is not valid json.
+
+**Get data:**
+```
+firebase --project swiftisland-fc283 database:get /faq | sed '1d' | jq '.'   > ./api/faq.json
+```
+
+**Push data from JSON structure:**
+```
+firebase --project swiftisland-fc283 database:set /faq faq.json  
+```
+
+both endpoints here are `/faq`.
+
+More commands can be found [here](https://firebase.blog/posts/2017/12/read-and-write-your-realtime-database) and [here](https://github.com/firebase/firebase-tools).
+
+We might need to update the firebase package from Github to [this one](https://github.com/w9jds/firebase-action)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

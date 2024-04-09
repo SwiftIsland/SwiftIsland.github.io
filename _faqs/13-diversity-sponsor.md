@@ -11,4 +11,5 @@ The deadline for submitting your diversity sponsorship is 30th of May 2024.
 <br/><br/>
 
 We have Diversity Sponsorship ❣️ tickets available to help facilitate this program. Would you like to contribute to promoting diversity in a simple way? <a href='https://ti.to/swiftisland/2024/with/diversity-sponsorship'>Purchase a sponsorship ticket now</a>!"
+disabled: false
 ---

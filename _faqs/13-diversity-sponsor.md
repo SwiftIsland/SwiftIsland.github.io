@@ -7,8 +7,8 @@ Our diversity program provides discounted tickets to individuals from underrepre
 
 <strong>Please note:</strong> <i>Our diversity program only offers conference attendance + Hassel-free travel from Schiphol Airport to Texel. If you live abroad getting to the Netherlands via train, plane or other forms of transportation is on your own account and is not covered by our diversity program.</i><br/><br/>
 
-The deadline for submitting your diversity sponsorship is 30th of April 2023.
+The deadline for submitting your diversity sponsorship is 30th of May 2024.
 <br/><br/>
 
-We have Diversity Sponsorship ❣️ tickets available to help facilitate this program. Would you like to contribute to promoting diversity in a simple way? <a href='https://ti.to/swiftisland/2023/with/diversity-sponsorship'>Purchase a sponsorship ticket now</a>!"
+We have Diversity Sponsorship ❣️ tickets available to help facilitate this program. Would you like to contribute to promoting diversity in a simple way? <a href='https://ti.to/swiftisland/2024/with/diversity-sponsorship'>Purchase a sponsorship ticket now</a>!"
 ---

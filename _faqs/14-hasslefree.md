@@ -17,4 +17,5 @@ From Schiphol we have a coach/bus waiting to take you to Texel where the confere
 
 <i>Please take into account when buying a plane ticket that you need to be on time at Schiphol Airport, calculate at lease two hours for checkout from the Airport. So book your ticket accordingly.</i><br><br>
 "
+disabled: true
 ---

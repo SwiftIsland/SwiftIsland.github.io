@@ -31,6 +31,11 @@
   }
 }
 
+#tito-overlay {
+  position: relative;
+  z-index: 2000;
+}
+
 .navbar-toggle {
   border: 0;
   border-radius: 0;

@@ -1,0 +1,52 @@
+<section id="mentors" class="section mentors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Shift Island speakers for {{ site.edition-year }}</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for speaker in site.shiftisland limit: 4 offset: 0 %}
+            {% if speaker.year == site.edition-year  %} 
+
+            <div class="col-md-4 col-sm-6">
+                <div class="speaker">
+                    {% if speaker.image != '' %}
+                    <figure>
+                        <img alt="{{ speaker.name }}" class="img-responsive center-block" src="{{ speaker.image }}">
+                    </figure>
+                    {% endif %}
+                    <h4 style="text-align: center;">{{ speaker.name }}</h4>
+                    
+                    <p>{{ speaker.bio}}</p>
+                    <ul class="social-block" style="text-align: center;">
+                        {% if speaker.twitter != '' %}
+                        <li>
+                            <a href="https://www.twitter.com/{{ speaker.twitter }}" target="_blank">
+                                <i class="ion-social-twitter"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if speaker.linkedin != '' %}
+                        <li>
+                            <a href="https://www.linkedin.com/in/{{ speaker.linkedin }}" target="_blank">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %} {% if speaker.website != '' %}
+                        <li>
+                            <a href="{{ mentor.website }}" target="_blank">
+                                <i class="ion-ios-world-outline"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                
+                </div>
+                <!-- /.speaker -->
+            </div>   
+            {% endif %}     
+            {% endfor %}
+        </div>
+    </div>
+</section>

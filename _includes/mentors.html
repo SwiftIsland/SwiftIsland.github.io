@@ -8,7 +8,7 @@
 
         <div class="row">
             {% for mentor in site.mentors limit: 4 offset: 0 %}
-            {% if mentor.year == "2023" %} 
+            {% if mentor.year == site.edition-year and mentor.status == "live"  %}
 
             <div class="col-md-3 col-sm-6">
                 <div class="speaker">
@@ -50,7 +50,7 @@
         </div>
         <div class="row">
             {% for mentor in site.mentors limit: 4 offset: 4 %}
-            {% if mentor.year == "2023" %} 
+            {% if mentor.year == site.edition-year and mentor.status == "live" %} 
 
             <div class="col-md-3 col-sm-6">
                 <div class="speaker">

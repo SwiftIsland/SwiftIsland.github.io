@@ -13,5 +13,5 @@ year: "2024"
 website: "https://jolandaarends.com/"
 twitter: ""
 linkedin: "jolandaarends"
-image: "assets/images/speakers/speaker-jolanda-2024.jpg"
+image: "assets/images/speakers/speaker-jolanda-2024.png"
 ---

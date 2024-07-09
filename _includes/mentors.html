@@ -27,7 +27,15 @@
                                 <i class="ion-social-twitter"></i>
                             </a>
                         </li>
-                        {% endif %} {% if mentor.linkedin != '' %}
+                        {% endif %}
+                        {% if mentor.mastodon and mentor.mastodon != '' %}
+                        <li>
+                            <a href="{{ mentor.mastodon }}" target="_blank">
+                                <img src="assets/images/icons/logo-mastodon.svg" alt="Mastodon logo" width="24" height="24">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if mentor.linkedin != '' %}
                         <li>
                             <a href="https://www.linkedin.com/in/{{ mentor.linkedin }}" target="_blank">
                                 <i class="ion-social-linkedin-outline"></i>
@@ -69,7 +77,15 @@
                                 <i class="ion-social-twitter"></i>
                             </a>
                         </li>
-                        {% endif %} {% if mentor.linkedin != '' %}
+                        {% endif %}
+                        {% if mentor.mastodon and mentor.mastodon != '' %}
+                        <li>
+                            <a href="{{ mentor.mastodon }}" target="_blank">
+                                <img src="assets/images/icons/logo-mastodon.svg" alt="Mastodon logo" width="24" height="24">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if mentor.linkedin != '' %}
                         <li>
                             <a href="https://www.linkedin.com/in/{{ mentor.linkedin }}" target="_blank">
                                 <i class="ion-social-linkedin-outline"></i>

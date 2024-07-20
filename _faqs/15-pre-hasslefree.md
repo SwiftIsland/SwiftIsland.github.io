@@ -6,5 +6,5 @@ From Schiphol we have a coach/bus waiting to take you to Texel where the confere
 
 <strong>The travel to Texel takes a while. We advise you to have your flight arrive at 14:00 the latest. Of Friday, you can expect to be back at Schiphol around 12:00</strong>
 "
-disabled: false
+disabled: true
 ---

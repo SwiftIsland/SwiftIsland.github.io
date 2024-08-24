@@ -1,0 +1,32 @@
+---
+layout: none
+---
+[
+    {%- for mentor in site.mentors -%}
+    {%- if mentor.year == site.edition-year and mentor.status == 'live' -%}
+    {
+      "name": {{ mentor.name | jsonify }},
+      "bio": {{ mentor.bio | jsonify }}
+      {%- if mentor.image != '' -%}
+      , "image": {{ mentor.image | jsonify }}
+      {%- endif -%}
+      {%- if mentor.twitter != '' -%}
+      , "twitter": {{ mentor.twitter | jsonify }}
+      {%- endif -%}
+      {%- if mentor.mastodon != '' -%}
+      , "mastodon": {{ mentor.mastodon | jsonify }}
+      {%- endif -%}
+      {%- if mentor.linkedin != '' -%}
+      , "linkedin": {{ mentor.linkedin | jsonify }}
+      {%- endif -%}
+      {%- if mentor.website != '' -%}
+      , "website": {{ mentor.website | jsonify }}
+      {%- endif -%}
+    }
+    {%- unless forloop.last -%}
+    ,
+    {%- endunless -%}
+    {%- endif -%}
+    {%- endfor -%}
+]
+]

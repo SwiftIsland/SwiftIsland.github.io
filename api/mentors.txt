@@ -1,0 +1,15 @@
+---
+layout: none
+---
+{% for mentor in site.mentors %}
+{% if mentor.year == site.edition-year and mentor.status == 'live' %}
+###**{{ mentor.name }}**<br>
+<div style="float: left; margin-right: 10px; margin-bottom: 10px;">
+    <img src="https://swiftisland.nl/{{ mentor.image }}" alt="{{ mentor.name }}" style="width: 100px; height: auto; align="left">
+</div>
+<p>{{ mentor.bio }}</p>
+{% if mentor.twitter and mentor.twitter != '' %} [X.com](https://x.com/{{ mentor.twitter }}) {% endif %} {% if mentor.mastodon and mentor.mastodon != '' %} [Mastodon]({{ mentor.mastodon }}) {% endif %} {% if mentor.linkedin and mentor.linkedin != '' %} [Linkedin](https://www.linkedin.com/in/{{ mentor.linkedin }}) {% endif %}
+{% if mentor.website and mentor.website != '' %} [Website]({{ mentor.website }}) {% endif %} {% unless forloop.last %}
+{% endunless %}
+{% endif %}
+{% endfor %}

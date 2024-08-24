@@ -3,8 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h3 class="section-title">Software & Book Sponsors</h3>
-                <p>Our pubquiz is is sponsored by products we love. The creators of these great products were so generous to
-                    provide software licenses and books as prizes.</p>
+                <p>Our pubquiz is is sponsored by products we love. The creators of these great products were so generous to provide software licenses and books as prizes.</p>
             </div>
         </div>
         <div class="row">
@@ -12,7 +11,7 @@
                 {% for sponsor in site.sponsors %}
                 <div class="col-md-2 col-sm-3 col-xs-6 sponsor-icon">
                     <a href="{{ sponsor.link }}" target="_blank">
-                        <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase }}.png{% endif %}"
+                        <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase | replace: ' ', '_' }}.png{% endif %}"
                         />
                     </a>
                     <h4>{{sponsor.title}}</h4>

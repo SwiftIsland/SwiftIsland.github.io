@@ -25,7 +25,7 @@
             <div class="col-md-4">
                 <h4>{{ sponsor.title }}</h4>
                 <a href="{{ sponsor.link }}" target="_blank">
-                    <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase }}.png{% endif %}" width="100%" />
+                    <img src="assets/images/sponsors/{% if sponsor.icon %}{{sponsor.icon}}{% else %}{{ sponsor.title | downcase | replace: '', '_' }}.png{% endif %}" width="100%" />
                 </a>
             </div>
             {% endfor %}

@@ -7,6 +7,6 @@ status: "live"
 year: "2024"
 website: ""
 twitter: ""
-linkedin: ""
+linkedin: "francineboon"
 image: "assets/images/speakers/speaker-francine-2024.png"
 ---

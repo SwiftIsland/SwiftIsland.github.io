@@ -2,12 +2,12 @@
 layout: none
 ---
 [
-    {%- for faq in site.faqs %}
+    {%- for faq in site.faqs -%}
     {
       "body": {{- faq.body | jsonify }},
       "index": {{- faq.index | jsonify }},
       "title": {{- faq.title | jsonify }}
     }
-    {% unless forloop.last %},{% endunless %}
+    {% unless forloop.last -%},{% endunless -%}
   {% endfor -%} 
 ]

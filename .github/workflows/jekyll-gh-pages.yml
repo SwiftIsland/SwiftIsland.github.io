@@ -29,12 +29,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      #- name: Setup Firebase CLI
-      #  uses: vimtor/action-setup-firebase@v2
-      #  with:
-      #    firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-      #- name: Import Firebase JSON
-      #  run: firebase --project ${{ secrets.FIREBASE_PROJECT }} database:get /faq  | sed '1d' | jq '.' > ./api/faq.json
+      - name: Setup Firebase CLI
+        uses: vimtor/action-setup-firebase@v2
+        with:
+          firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+      - name: Import Firebase JSON
+        run: firebase --project ${{ secrets.FIREBASE_PROJECT }} database:get /faq  | sed '1d' | jq '.' > ./api/faq.json
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll

@@ -33,7 +33,7 @@ jQuery(function () {
     email = $("#register-email").val();
 
     if ($.trim(name) != "" && $.trim(email) != "") {
-      url = "https://checkout.tito.io/swiftisland/2024/interested_users.json"
+      url = "https://checkout.tito.io/swiftisland/2025/interested_users.json"
       $.post(url, {"interested_user":{"email":email,"name":name}}, function (data) {})
       .promise()
         .done(function () {

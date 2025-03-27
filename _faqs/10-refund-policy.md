@@ -8,5 +8,5 @@ body: "For this year we will:
 <li>From 27h of July 2024 we will not refund.</li> 
 </ul>
 And you can always transfer your ticket to someone else."
-disabled: false
+disabled: true
 ---

@@ -11,7 +11,7 @@ edition-year: "2025"
 edition-date: "Sept 2 - 4"
 from-ticket-price: "€1547"
 ticket-amount: "60"
-presale: false
+presale: true
 collections:
   - mentors
   - previousmentors
